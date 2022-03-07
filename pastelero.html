@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelero</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f388a0;
+        }
+
+        /* Estilo de header */
+        header {
+            /*background-color: #f388a0;*/
+            padding: 10px;
+            /*height: 500px;*/
+            text-align: center;
+            
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 25%;
+            /* only for demonstration, should be removed */
+           /* background: #ccc;*/
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: square;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 75%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .columna {
+        float: left;
+        padding: 10px;
+        /* height: 300px;  Should be removed. Only for demonstration */
+        }
+
+        .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+        .alizq{
+            width:50%;
+            text-align: center;
+        }
+        .alder{
+            width:50%;
+            text-align: center;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png">
+    </header>
+    <p style="text-align:center" >Bienvenido, aqui estan algunos estutus de la pasteleria</p> 
+    <hr>    
+    <div class="row">
+        <div class="columna alizq" style="text-align: center;">
+            <h2>Inventario de sabores por capas</h2>
+            <table class="center">
+                <tbody>
+                    <tr>
+                        <th>Chocolate</th>
+                        <th>100</th>
+                    </tr>
+                    <tr>
+                        <th>vainilla</th>
+                        <th>150</th>
+                    </tr>
+                    <tr>
+                        <th>Fresa</th>
+                        <th>70</th>
+                    </tr>
+                    <tr>
+                        <th>Mango</th>
+                        <th>60</th>
+                    </tr>
+                    <tr>
+                        <th>Manzana</th>
+                        <th>30</th>
+                    </tr>
+                    <tr>
+                        <th>Banana</th>
+                        <th>30</th>
+                    </tr>
+                    <tr>
+                        <th>Naranja</th>
+                        <th>40</th>
+                    </tr>
+                    <tr>
+                        <th>Red velvet</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>Brownie</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>Lavanda con limon</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>Chocolate ruby</th>
+                        <th>4</th>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </div>
+        <div class="columna alder" >
+        <h2>Inventario de toppings</h2>
+        
+        <table class="center">
+            <tbody>
+                <tr>
+                    <tr>
+                        <th>Chocolates</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>fresas</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>frutas surtidas</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>cerezas</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>diamantina comestible</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>perlas comestibles</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>chocolate ruby</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>telarañas de caramelo belga</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>bombas de humos comestible</th>
+                        <th>3</th>
+                    </tr>
+        
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <hr>
+    <p style="text-align: center;">Pedidos recientes</p>
+    <table class="center">
+        <tbody>
+            <tr>
+                <th> <strong>nombre |</strong> </th>
+                <th><strong>fecha de entrega|</strong></th>
+                <th><strong>descripción</strong></th>
+            </tr>
+            <tr>
+                <th> ismael rodrigo rodriguez</th>
+                <th>10/03/22</th>
+                <th><strong><a href="#">chocolate,fresa...</a></strong></th>
+            </tr>
+            <tr>
+                <th> <strong>mayela rocio dural</strong> </th>
+                <th>11/03/22</th>
+                <th><strong><a href="#">red velvet...</a></strong></th>
+            </tr>
+        </tbody>
+
+    </table>
+    <footer>
+        <p>Encuentranos en avenida de la imaginacion #999 <br> lunes a sabado 8am-10pm <br> domingo 10am -8pm
+            <br>Contactanos: 444-444-4444<br>email: kakescakes@correo.com</p>
+    </footer>
+
+</body>
+
+</html>

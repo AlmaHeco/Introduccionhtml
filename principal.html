@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakes pasteleria</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f388a0;
+        }
+
+        /* Estilo de header */
+        header {
+            /*background-color: #f388a0;*/
+            padding: 10px;
+            /*height: 500px;*/
+            text-align: center;
+            
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+           /* background: #ccc;*/
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: square;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .columna {
+        float: left;
+        padding: 10px;
+        /* height: 300px;  Should be removed. Only for demonstration */
+        }
+
+        .izquierda {
+        width: 33%;
+        text-align: center;
+        }
+
+        .centro {
+        width: 33%;
+        text-align: center;
+        }
+
+        .derecha{
+            width:33%;
+            text-align: center;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png">
+    </header>
+    <p style="text-align:center" >El sabor de la celebracion</p> 
+
+    <div class="row">
+        <div class="columna izquierda" style="background: color #ffffff;">
+          <h2>Chocolate</h2>
+          <img src="https://imgur.com/Tn1KjXp.jpg">
+          <p>$500 <br> Modificar</p>
+        </div>
+        <div class="columna centro" style="background-color:#f79090;">
+          <h2>Vainilla</h2>
+          <img style="height: 399px;width: 266px" src="https://i.imgur.com/d91IL16.jpeg">
+          <p>$600 <br> Modificar</p>
+        </div>
+        <div class="columna derecha" style="background-color:#f79090;">
+          <h2>Fresas</h2>
+          <img style="height: 399px;width: 266px" src="https://i.imgur.com/2ZS01QP.jpeg">
+          <p>$400 <br> Modificar</p>
+        </div>
+    </div>
+
+    <section>
+        <nav style="text-align: center">
+           <a href="formulario.html"> Comencemos</a>
+        </nav>
+
+        <article>
+            <h1>Puedes crear tu propio pastel</h1>
+            <li>A tu propio gusto</li>
+            <li>A tu propio etilo</li>
+            <li>Cientos de combinaciones</li>
+            <li>Tu decides</li>
+        </article>
+    </section>
+
+    <footer>
+        <p>Encuentranos en avenida de la imaginacion #999 <br> lunes a sabado 8am-10pm <br> domingo 10am -8pm
+        <br>Contactanos: 444-444-4444<br>email: kakescakes@correo.com</p>
+    </footer>
+
+</body>
+
+</html>
